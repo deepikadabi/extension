@@ -1,7 +1,5 @@
-window.chrome.extension.onMessage.addListener((message, sender, sendResponse) => {
-    console.log("webpage msg is " + message);
-    console.log(message.type);
-    if(message.type==='Get_Asins'){
+window.chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+    if(message.command==='Get Asins'){
         scrapAsins();
     }
 });
@@ -15,10 +13,10 @@ function scrapAsins(){
             data.push(d.getAttribute("href").split("/")[3].split("?")[0]);
         })
         console.log("data is " + data)
+        // eslint-disable-next-line no-undef
         chrome.extension.sendMessage({
             type: 'asin', 
             configData: data
         });
     }, 1000);   
-    console.log("function call ended");
 }

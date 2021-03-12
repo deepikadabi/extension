@@ -1,4 +1,3 @@
-
 {
   "name":"Get ASINs",
   "version": "1.0.0",
@@ -17,6 +16,9 @@
     "default_popup": "index.html",
     "default_title": "Open the popup"
   },
+  "externally_connectable": {
+    "matches": ["*://*.amazon.com/*"]
+  },
   "content_security_policy": "script-src 'self' 'sha256-4hEPz0EIRMiJSUOQKDP1DxSPErPIKMFuFdyrbYI8O6U='; object-src 'self'",
-  "permissions": ["tabs", "<all_urls>"]
+  "permissions": ["tabs", "<all_urls>" , "activeTab"]
 }

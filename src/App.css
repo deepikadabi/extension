@@ -1,7 +1,48 @@
 .App {
   text-align: center;
+  padding: 1rem;
+    width: 230px;
+    box-shadow: 2px 2px;
+    background-color: floralwhite;
+}
+.MyButton {
+  padding: 6px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 4px;
+    transition-duration: .4s;
+    cursor: pointer;
+    color: #000;
+    border: 1px solid #000;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    padding-left: 14px;
+    padding-right: 14px;
 }
 
+.MyButton:hover{
+  background-color: #000;
+  color: white;
+  border: 1px solid #000;
+}
+
+.MyUList{
+  line-height:180%;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.MyList{
+  list-style-type: none;
+    font-size: 14px;
+    font-family: Arial,Helvetica,sans-serif;
+    -webkit-text-stroke: thin;
+    align-content: space-evenly;
+    border-bottom: ridge;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
