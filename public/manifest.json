@@ -18,5 +18,4 @@
   },
   "content_security_policy": "script-src 'self' 'sha256-4hEPz0EIRMiJSUOQKDP1DxSPErPIKMFuFdyrbYI8O6U='; object-src 'self'",
   "permissions": ["tabs", "<all_urls>"]
-
 }
