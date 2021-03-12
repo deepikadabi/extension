@@ -1,28 +1,6 @@
 import './App.css';
 import {useEffect , useState} from 'react';
 
-// const Div = styled.div`
-//   width:300px;
-//   padding: 10px;
-
-// `
-
-// const Button = styled.button`
-// border: none;
-//   color: white;
-//   padding: 5px 18px;
-//   text-align: center;
-//   text-decoration: none;
-//   display: inline-block;
-//   font-size: 10px;
-//   font-weight:bold;
-//   border-radius:5px;
-//   margin: 4px 2px;
-//   transition-duration: 0.4s;
-//   cursor: pointer;
-// `
-
-
 const App = () => {
   const [asins, setAsins] = useState([]);
 
@@ -43,17 +21,15 @@ const App = () => {
     });
    }
 
-  
   return (
     <div className="App">      
-      <button onClick={getAsins} className="MyButton">Get ASINS on this Page</button>
-      <ul className="MyUList">
-      {asins.map(asin =>(
-        <li key={asin} className="MyList">{asin}</li>
-      ))}
-      
-      </ul>
-    </div>
+    <button onClick={getAsins} className="MyButton">Get ASINS on this Page</button>
+    <ul className="MyUList">
+    {asins.map(asin =>(
+      <li key={asin} className="MyList">{asin}</li>
+    ))}
+    </ul>
+  </div>
   );
 }
 
