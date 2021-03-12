@@ -6,6 +6,13 @@ window.chrome.extension.onMessage.addListener((message, sender, sendResponse) =>
     }
 });
 
+const port = window.chrome.runtime.connect(window.chrome.runtime.id);
+port.onMessage.addListener(request => {
+    if (request.greeting === 'hello') {
+      console.log('received a hello message');
+    }
+});
+
 function scrapAsins(){
     let data=[]
     setTimeout(() => {
