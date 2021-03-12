@@ -1,15 +1,6 @@
-window.chrome.extension.onMessage.addListener((message, sender, sendResponse) => {
-    console.log("webpage msg is " + message);
-    console.log(message.type);
-    if(message.type==='Get_Asins'){
+window.chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+    if(message.command==='Get Asins'){
         scrapAsins();
-    }
-});
-
-const port = window.chrome.runtime.connect(window.chrome.runtime.id);
-port.onMessage.addListener(request => {
-    if (request.greeting === 'hello') {
-      console.log('received a hello message');
     }
 });
 
@@ -27,5 +18,4 @@ function scrapAsins(){
             configData: data
         });
     }, 1000);   
-    console.log("function call ended");
 }
