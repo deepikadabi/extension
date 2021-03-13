@@ -13,6 +13,7 @@ function scrapAsins(){
             data.push(d.getAttribute("href").split("/")[3].split("?")[0]);
         })
         console.log("data is " + data)
+        // eslint-disable-next-line no-undef
         chrome.extension.sendMessage({
             type: 'asin', 
             configData: data

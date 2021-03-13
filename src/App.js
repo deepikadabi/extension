@@ -19,15 +19,14 @@ const App = () => {
    }
 
   return (
-    <div className="App">
-      <button onClick={getAsins}>Get ASIN</button>
-      <ul>
-      {asins.map(asin =>(
-        <li key={asin}>{asin}</li>
-      ))}
-      
-      </ul>
-    </div>
+    <div className="App">      
+    <button onClick={getAsins} className="MyButton">Get ASINS on this Page</button>
+    <ul className="MyUList">
+    {asins.map(asin =>(
+      <li key={asin} className="MyList">{asin}</li>
+    ))}
+    </ul>
+  </div>
   );
 }
 
