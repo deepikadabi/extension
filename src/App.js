@@ -5,24 +5,21 @@ const App = () => {
   const [asins, setAsins] = useState([]);
 
   useEffect(() => {
-
-    window.chrome.extension.onMessage.addListener( (message, sender, sendResponse) => {
-      console.log("message received is " + message.configData);
+    window.chrome.extension.onMessage.addListener( (message, sender, sendResponse) => { 
       setAsins(message.configData);
-      console.log("asins" + asins);
     });
   }, [])
 
   function getAsins() {
 
     window.chrome.tabs.query({currentWindow: true , active:true} , (tabs)=>{
-      var activetab = tabs[0];
+      const activetab = tabs[0];
       window.chrome.tabs.sendMessage(activetab.id , {command: "Get Asins"});
     });
    }
 
   return (
-    <div className="App">      
+    <div className="App">
       <button onClick={getAsins}>Get ASIN</button>
       <ul>
       {asins.map(asin =>(
