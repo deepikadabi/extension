@@ -16,12 +16,16 @@ const App = () => {
       const activetab = tabs[0];
       window.chrome.tabs.sendMessage(activetab.id , {command: "Get Asins"});
     });
+    
    }
+
 
   return (
     <div className="App">      
     <button onClick={getAsins} className="MyButton">Get ASINS on this Page</button>
-    <ul className="MyUList">
+    <br />
+    {asins.length > 0 && <button className="MyButton" onClick={() => {navigator.clipboard.writeText(asins.join("\r\n"))}} >Copy all ASINS</button>}
+    <ul className="MyUList" id="asins">
     {asins.map(asin =>(
       <li key={asin} className="MyList">{asin}</li>
     ))}
