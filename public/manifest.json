@@ -19,6 +19,6 @@
   "externally_connectable": {
     "matches": ["*://*.amazon.com/*"]
   },
-  "content_security_policy": "script-src 'self' 'sha256-4hEPz0EIRMiJSUOQKDP1DxSPErPIKMFuFdyrbYI8O6U='; object-src 'self'",
+  "content_security_policy": "script-src 'self' 'sha256-p5hOtlld76OubQRjuoOzFkH1phfMCtQyYciqJYR0hgk='; object-src 'self'",
   "permissions": ["tabs", "<all_urls>" , "activeTab"]
 }
