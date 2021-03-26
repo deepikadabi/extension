@@ -17,7 +17,7 @@ const App = () => {
       const activetab = tabs[0];
       window.chrome.tabs.sendMessage(activetab.id , {command: "Get Asins"});
     });
-    
+    setCopied(false);
    }
 
 

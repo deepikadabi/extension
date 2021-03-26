@@ -1,30 +1,36 @@
-
 .App {
   text-align: center;
   padding: 1rem;
-    width: 230px;
-    box-shadow: 2px 2px;
-    background-color: floralwhite;
+  width: 230px;
+  box-shadow: 2px 2px;
 }
+
 .MyButton {
   padding: 6px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    font-weight: 700;
-    border-radius: 4px;
-    transition-duration: .4s;
-    cursor: pointer;
-    color: #000;
-    border: 1px solid #000;
-    outline: none;
-    background-color: #fff;
-    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 6px 20px 0 rgb(0 0 0 / 19%);
-    padding-left: 14px;
-    padding-right: 14px;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 700;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+  display: inline-block;
+  line-height: 15px;
+  text-align: center;
+  border: none;
+  border-radius: 7px;
+  box-sizing: border-box;
+  background: linear-gradient(52.84deg, #63bcf6 0%, #0295f6 100%);
+  color: #ffffff;
+  box-shadow: 0 1px 5px 0 #acb5c2;
+  padding-left: 14px;
+  padding-right: 14px;
+
 }
 
 .MyButtonDisabled {
+  box-sizing: border-box;
+  background: linear-gradient(52.84deg, #63bcf6 0%, #0295f6 100%);
+  color: #ffffff;
+  box-shadow: 0 1px 5px 0 #acb5c2;
   padding: 6px;
   text-decoration: none;
   display: inline-block;
@@ -33,60 +39,34 @@
   border-radius: 4px;
   transition-duration: .4s;
   cursor: not-allowed;
-  color: #000;
-  border: 1px solid #000;
   outline: none;
-  background-color: #fff;
-  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 6px 20px 0 rgb(0 0 0 / 19%);
   padding-left: 14px;
   padding-right: 14px;
 }
 
-.MyButton:hover{
-  background-color: #000;
-  color: white;
-  border: 1px solid #000;
+.MyButton:hover {
+  background : linear-gradient(48.95deg, #0295f6 0%, #0068c3 100%);
+  cursor: pointer;
 }
-.MyUList{
-  line-height:180%;
+
+.MyButton :focus{
+  outline: none;
+  background: '#0068C3';
+  box-shadow: 0 0 3px 0 #0068c3;
+  border: none;
+}
+
+.MyUList {
+  line-height: 180%;
   padding: 5px;
   margin-right: 5px;
 }
-.MyList{
+
+.MyList {
   list-style-type: none;
-    font-size: 14px;
-    font-family: Arial,Helvetica,sans-serif;
-    -webkit-text-stroke: thin;
-    align-content: space-evenly;
-    border-bottom: ridge;
-}
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-.App-header {
-  background-color: #282C34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-.App-link {
-  color: #61DAFB;
-}
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke: thin;
+  align-content: space-evenly;
+  border-bottom: ridge;
 }

@@ -4,9 +4,9 @@
   "manifest_version": 2,
   "description": "Get ASINs of all the products",
   "icons": {
-    "16": "favicon.ico",
-    "48": "logo192.png",
-    "128": "logo512.png"
+    "16": "logo-round.png",
+    "48": "logo-round.png",
+    "128": "logo-round.png"
   },
   "content_scripts": [{
     "matches": ["<all_urls>"],
