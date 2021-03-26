@@ -1,8 +1,8 @@
 {
-  "name":"Get ASINs",
+  "name":"DH ASINs Fetcher",
   "version": "1.0.0",
   "manifest_version": 2,
-  "description": "Get ASINs of all the products",
+  "description": "Get ASINs of the products listed in Amazon Stores and also copy them if needed.",
   "icons": {
     "16": "logo-round.png",
     "48": "logo-round.png",
@@ -14,7 +14,7 @@
   }],
   "browser_action": {
     "default_popup": "index.html",
-    "default_title": "Open the popup"
+    "default_title": "DH ASINs Fetcher"
   },
   "externally_connectable": {
     "matches": ["*://*.amazon.com/*"]
